@@ -11,18 +11,22 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingTop="@dimen/nav_header_vertical_spacing"
-        app:srcCompat="@android:drawable/sym_def_app_icon" />
+    <agency.tango.android.avatarview.views.AvatarView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:av_border_color="@android:color/white"
+        android:layout_marginTop="5dp"
+        app:av_border_width="4dp"
+        app:av_text_size_percentage="35"
+        android:layout_gravity="center"
+        android:id="@+id/avatar_view"/>
 
     <TextView
+        android:id="@+id/txtTenDangNhap"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
-        android:text="NGUYỄN QUỐC CƯỜNG"
+        android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
 </LinearLayout>

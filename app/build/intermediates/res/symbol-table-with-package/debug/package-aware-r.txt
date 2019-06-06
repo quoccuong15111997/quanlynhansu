@@ -79,12 +79,26 @@ attr autoSizeMinTextSize
 attr autoSizePresetSizes
 attr autoSizeStepGranularity
 attr autoSizeTextType
+attr av_border_color
+attr av_border_width
+attr av_text_size_percentage
 attr background
 attr backgroundSplit
 attr backgroundStacked
 attr backgroundTint
 attr backgroundTintMode
 attr barLength
+attr bar_active_color
+attr bar_enabled
+attr bar_error_color
+attr bar_height
+attr bar_inactive_color
+attr bar_margin
+attr bar_margin_bottom
+attr bar_margin_left
+attr bar_margin_right
+attr bar_margin_top
+attr bar_success_color
 attr barrierAllowsGoneWidgets
 attr barrierDirection
 attr behavior_autoHide
@@ -108,6 +122,11 @@ attr boxCornerRadiusTopEnd
 attr boxCornerRadiusTopStart
 attr boxStrokeColor
 attr boxStrokeWidth
+attr box_margin
+attr box_margin_bottom
+attr box_margin_left
+attr box_margin_right
+attr box_margin_top
 attr buttonBarButtonStyle
 attr buttonBarNegativeButtonStyle
 attr buttonBarNeutralButtonStyle
@@ -267,6 +286,8 @@ attr helperTextTextAppearance
 attr hideMotionSpec
 attr hideOnContentScroll
 attr hideOnScroll
+attr hide_otp
+attr hide_otp_drawable
 attr hintAnimationEnabled
 attr hintEnabled
 attr hintTextAppearance
@@ -364,6 +385,7 @@ attr layout_keyline
 attr layout_optimizationLevel
 attr layout_scrollFlags
 attr layout_scrollInterpolator
+attr length
 attr liftOnScroll
 attr lineHeight
 attr lineSpacing
@@ -393,6 +415,13 @@ attr navigationIcon
 attr navigationMode
 attr navigationViewStyle
 attr numericModifiers
+attr otp
+attr otp_box_background
+attr otp_box_background_active
+attr otp_box_background_error
+attr otp_box_background_inactive
+attr otp_box_background_success
+attr otp_text_size
 attr overlapAnchor
 attr paddingBottomNoButtons
 attr paddingEnd
@@ -520,6 +549,7 @@ attr textColorSearchUrl
 attr textEndPadding
 attr textInputStyle
 attr textStartPadding
+attr text_typeface
 attr theme
 attr thickness
 attr thumbTextPadding
@@ -554,6 +584,7 @@ attr ttcIndex
 attr useCompatPadding
 attr viewInflaterClass
 attr voiceIcon
+attr width
 attr windowActionBar
 attr windowActionBarOverlay
 attr windowActionModeOverlay
@@ -594,10 +625,13 @@ color abc_tint_spinner
 color abc_tint_switch_track
 color accent_material_dark
 color accent_material_light
+color av_bitmap_background_color
+color av_default_border
 color background_floating_material_dark
 color background_floating_material_light
 color background_material_dark
 color background_material_light
+color black
 color bright_foreground_disabled_material_dark
 color bright_foreground_disabled_material_light
 color bright_foreground_inverse_material_dark
@@ -635,6 +669,8 @@ color error_color_material_dark
 color error_color_material_light
 color foreground_material_dark
 color foreground_material_light
+color green
+color grey
 color highlighted_text_material_dark
 color highlighted_text_material_light
 color material_blue_grey_800
@@ -685,6 +721,7 @@ color primary_text_default_material_dark
 color primary_text_default_material_light
 color primary_text_disabled_material_dark
 color primary_text_disabled_material_light
+color red
 color ripple_material_dark
 color ripple_material_light
 color secondary_text_default_material_dark
@@ -699,6 +736,9 @@ color switch_thumb_normal_material_dark
 color switch_thumb_normal_material_light
 color tooltip_background_dark
 color tooltip_background_light
+color transparent
+color white
+color whiteoff
 dimen abc_action_bar_content_inset_material
 dimen abc_action_bar_content_inset_with_nav
 dimen abc_action_bar_default_height_material
@@ -776,6 +816,9 @@ dimen abc_text_size_title_material
 dimen abc_text_size_title_material_toolbar
 dimen activity_horizontal_margin
 dimen activity_vertical_margin
+dimen av_default_border_width
+dimen av_default_height
+dimen av_default_width
 dimen cardview_compat_inset_shadow
 dimen cardview_default_elevation
 dimen cardview_default_radius
@@ -1003,18 +1046,26 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable androidicon
 drawable avd_hide_password
 drawable avd_show_password
+drawable bg_pin
 drawable border_button
 drawable border_edittext
+drawable confusing_shape
+drawable default_shape
 drawable design_bottom_navigation_item_background
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable error_shape
 drawable grdnt
+drawable ic_check_black_24dp
+drawable ic_clear_black_24dp
 drawable ic_hrpng
+drawable ic_info_outline_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_menu_camera
@@ -1027,6 +1078,9 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_notifications_none_white_24dp
+drawable ic_pan_tool_black_24dp
+drawable ic_refresh_black_24dp
+drawable info_shape
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
@@ -1044,9 +1098,11 @@ drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable pswrd
 drawable side_nav_bar
+drawable success_shape
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable usrusr
+drawable warning_shape
 id ALT
 id CTRL
 id FUNCTION
@@ -1079,11 +1135,14 @@ id all
 id always
 id async
 id auto
+id avatar_view
 id barrier
 id beginning
 id blocking
 id bottom
 id btnLogin
+id button
+id button2
 id buttonPanel
 id center
 id center_horizontal
@@ -1138,7 +1197,7 @@ id icon
 id icon_group
 id ifRoom
 id image
-id imageView
+id imageView4
 id info
 id invisible
 id italic
@@ -1172,6 +1231,7 @@ id normal
 id notification_background
 id notification_main_column
 id notification_main_column_container
+id otp_view
 id outline
 id packed
 id parallax
@@ -1238,6 +1298,7 @@ id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
+id textView
 id text_input_password_toggle
 id textinput_counter
 id textinput_error
@@ -1246,6 +1307,9 @@ id time
 id title
 id titleDividerNoCustom
 id title_template
+id toast_icon
+id toast_text
+id toast_type
 id toolbar
 id top
 id topPanel
@@ -1256,6 +1320,7 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id txtQuenMatKhau
+id txtTenDangNhap
 id uniform
 id unlabeled
 id up
@@ -1312,6 +1377,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_forgot_password
 layout activity_login
 layout activity_main
 layout app_bar_default
@@ -1331,6 +1397,7 @@ layout design_navigation_item_subheader
 layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
+layout fancytoast_layout
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
 layout nav_header_main
@@ -1412,6 +1479,7 @@ string path_password_strike_through
 string remember_password
 string search_menu_title
 string status_bar_notification_info_overflow
+string verification_code
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog
@@ -1929,6 +1997,7 @@ styleable AppCompatSeekBar android_thumb tickMark tickMarkTint tickMarkTintMode
 styleable AppCompatTextHelper android_textAppearance android_drawableTop android_drawableBottom android_drawableLeft android_drawableRight android_drawableStart android_drawableEnd
 styleable AppCompatTextView android_textAppearance autoSizeMaxTextSize autoSizeMinTextSize autoSizePresetSizes autoSizeStepGranularity autoSizeTextType firstBaselineToTopHeight fontFamily lastBaselineToBottomHeight lineHeight textAllCaps
 styleable AppCompatTheme android_windowIsFloating android_windowAnimationStyle actionBarDivider actionBarItemBackground actionBarPopupTheme actionBarSize actionBarSplitStyle actionBarStyle actionBarTabBarStyle actionBarTabStyle actionBarTabTextStyle actionBarTheme actionBarWidgetTheme actionButtonStyle actionDropDownStyle actionMenuTextAppearance actionMenuTextColor actionModeBackground actionModeCloseButtonStyle actionModeCloseDrawable actionModeCopyDrawable actionModeCutDrawable actionModeFindDrawable actionModePasteDrawable actionModePopupWindowStyle actionModeSelectAllDrawable actionModeShareDrawable actionModeSplitBackground actionModeStyle actionModeWebSearchDrawable actionOverflowButtonStyle actionOverflowMenuStyle activityChooserViewStyle alertDialogButtonGroupStyle alertDialogCenterButtons alertDialogStyle alertDialogTheme autoCompleteTextViewStyle borderlessButtonStyle buttonBarButtonStyle buttonBarNegativeButtonStyle buttonBarNeutralButtonStyle buttonBarPositiveButtonStyle buttonBarStyle buttonStyle buttonStyleSmall checkboxStyle checkedTextViewStyle colorAccent colorBackgroundFloating colorButtonNormal colorControlActivated colorControlHighlight colorControlNormal colorError colorPrimary colorPrimaryDark colorSwitchThumbNormal controlBackground dialogCornerRadius dialogPreferredPadding dialogTheme dividerHorizontal dividerVertical dropDownListViewStyle dropdownListPreferredItemHeight editTextBackground editTextColor editTextStyle homeAsUpIndicator imageButtonStyle listChoiceBackgroundIndicator listDividerAlertDialog listMenuViewStyle listPopupWindowStyle listPreferredItemHeight listPreferredItemHeightLarge listPreferredItemHeightSmall listPreferredItemPaddingLeft listPreferredItemPaddingRight panelBackground panelMenuListTheme panelMenuListWidth popupMenuStyle popupWindowStyle radioButtonStyle ratingBarStyle ratingBarStyleIndicator ratingBarStyleSmall searchViewStyle seekBarStyle selectableItemBackground selectableItemBackgroundBorderless spinnerDropDownItemStyle spinnerStyle switchStyle textAppearanceLargePopupMenu textAppearanceListItem textAppearanceListItemSecondary textAppearanceListItemSmall textAppearancePopupMenuHeader textAppearanceSearchResultSubtitle textAppearanceSearchResultTitle textAppearanceSmallPopupMenu textColorAlertDialogListItem textColorSearchUrl toolbarNavigationButtonStyle toolbarStyle tooltipForegroundColor tooltipFrameBackground viewInflaterClass windowActionBar windowActionBarOverlay windowActionModeOverlay windowFixedHeightMajor windowFixedHeightMinor windowFixedWidthMajor windowFixedWidthMinor windowMinWidthMajor windowMinWidthMinor windowNoTitle
+styleable AvatarView av_border_color av_border_width av_text_size_percentage
 styleable BottomAppBar backgroundTint fabAlignmentMode fabCradleMargin fabCradleRoundedCornerRadius fabCradleVerticalOffset hideOnScroll
 styleable BottomNavigationView elevation itemBackground itemHorizontalTranslationEnabled itemIconSize itemIconTint itemTextAppearanceActive itemTextAppearanceInactive itemTextColor labelVisibilityMode menu
 styleable BottomSheetBehavior_Layout behavior_fitToContents behavior_hideable behavior_peekHeight behavior_skipCollapsed
@@ -1966,6 +2035,7 @@ styleable MenuGroup android_enabled android_id android_visible android_menuCateg
 styleable MenuItem android_icon android_enabled android_id android_checked android_visible android_menuCategory android_orderInCategory android_title android_titleCondensed android_alphabeticShortcut android_numericShortcut android_checkable android_onClick actionLayout actionProviderClass actionViewClass alphabeticModifiers contentDescription iconTint iconTintMode numericModifiers showAsAction tooltipText
 styleable MenuView android_windowAnimationStyle android_itemTextAppearance android_horizontalDivider android_verticalDivider android_headerBackground android_itemBackground android_itemIconDisabledAlpha preserveIconSpacing subMenuArrow
 styleable NavigationView android_background android_fitsSystemWindows android_maxWidth elevation headerLayout itemBackground itemHorizontalPadding itemIconPadding itemIconTint itemTextAppearance itemTextColor menu
+styleable OtpTextView android_textColor bar_active_color bar_enabled bar_error_color bar_height bar_inactive_color bar_margin bar_margin_bottom bar_margin_left bar_margin_right bar_margin_top bar_success_color box_margin box_margin_bottom box_margin_left box_margin_right box_margin_top height hide_otp hide_otp_drawable length otp otp_box_background otp_box_background_active otp_box_background_error otp_box_background_inactive otp_box_background_success otp_text_size text_typeface width
 styleable PopupWindow android_popupBackground android_popupAnimationStyle overlapAnchor
 styleable PopupWindowBackgroundState state_above_anchor
 styleable RecycleListView paddingBottomNoButtons paddingTopNoTitle

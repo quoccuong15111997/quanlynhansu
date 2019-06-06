@@ -6,7 +6,7 @@ import java.util.Date;
 public class NhanVien implements Serializable {
     private String maNV;
     private String tenNV;
-    private Date ngaySinh;
+    private String ngaySinh;
     private boolean gioiTinh;
     private int cmnd;
     private int soDienThoai;
@@ -26,7 +26,7 @@ public class NhanVien implements Serializable {
     public NhanVien() {
     }
 
-    public NhanVien(String maNV, String tenNV, Date ngaySinh, boolean gioiTinh, int cmnd, int soDienThoai, String email, String loaiNV, int heSoLuong, String maChucVu, String maLuong, String maPhongBan, String maTrinhDoHocVan, String maCongTac, String maDieuChinhLuong, int soQuyetDinh, String maChuyenMon, String matKhau) {
+    public NhanVien(String maNV, String tenNV, String ngaySinh, boolean gioiTinh, int cmnd, int soDienThoai, String email, String loaiNV, int heSoLuong, String maChucVu, String maLuong, String maPhongBan, String maTrinhDoHocVan, String maCongTac, String maDieuChinhLuong, int soQuyetDinh, String maChuyenMon, String matKhau) {
         this.maNV = maNV;
         this.tenNV = tenNV;
         this.ngaySinh = ngaySinh;
@@ -63,11 +63,11 @@ public class NhanVien implements Serializable {
         this.tenNV = tenNV;
     }
 
-    public Date getNgaySinh() {
+    public String getNgaySinh() {
         return ngaySinh;
     }
 
-    public void setNgaySinh(Date ngaySinh) {
+    public void setNgaySinh(String ngaySinh) {
         this.ngaySinh = ngaySinh;
     }
 
@@ -190,5 +190,4 @@ public class NhanVien implements Serializable {
     public void setMatKhau(String matKhau) {
         this.matKhau = matKhau;
     }
-
 }

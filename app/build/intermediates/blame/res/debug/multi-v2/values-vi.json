@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Kar98\\Downloads\\Compressed\\QuanLyNhanVien\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-vi\\values-vi.xml",
+            "outputFile": "C:\\Users\\Kar98\\Documents\\quanlynhansu\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-vi\\values-vi.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Kar98\\.gradle\\caches\\transforms-2\\files-2.1\\e90b61718b7c0370259f2f09da8ee51c\\res\\values-vi\\values-vi.xml",
@@ -19,20 +19,20 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Kar98\\Downloads\\Compressed\\QuanLyNhanVien\\app\\src\\main\\res\\values-vi\\strings.xml",
+                    "source": "C:\\Users\\Kar98\\Documents\\quanlynhansu\\app\\src\\main\\res\\values-vi\\strings.xml",
                     "from": {
-                        "startLines": "6,2,7,11,10,4,3,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "267,57,329,537,492,188,113,385,432",
-                        "endColumns": "60,54,54,58,43,75,73,45,58",
-                        "endOffsets": "323,107,379,591,531,259,182,426,486"
+                        "startLines": "-1,-1,-1,-1,-1,-1,-1,-1,-1,12",
+                        "startColumns": "-1,-1,-1,-1,-1,-1,-1,-1,-1,4",
+                        "startOffsets": "-1,-1,-1,-1,-1,-1,-1,-1,-1,597",
+                        "endColumns": "-1,-1,-1,-1,-1,-1,-1,-1,-1,63",
+                        "endOffsets": "-1,-1,-1,-1,-1,-1,-1,-1,-1,656"
                     },
                     "to": {
-                        "startLines": "29,30,31,32,33,34,35,36,37",
-                        "startColumns": "4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "2817,2878,2933,2988,3047,3091,3167,3241,3287",
-                        "endColumns": "60,54,54,58,43,75,73,45,58",
-                        "endOffsets": "2873,2928,2983,3042,3086,3162,3236,3282,3341"
+                        "startLines": "29,30,31,32,33,34,35,36,37,40",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "2817,2878,2933,2988,3047,3091,3167,3241,3287,3531",
+                        "endColumns": "60,54,54,58,43,75,73,45,58,63",
+                        "endOffsets": "2873,2928,2983,3042,3086,3162,3236,3282,3341,3590"
                     }
                 },
                 {

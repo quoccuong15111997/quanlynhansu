@@ -10,4 +10,5 @@
     <string name="remember_password">Nhớ mật khẩu</string>
     <string name="login">Đăng nhập</string>
     <string name="forgot_password">Quên mật khẩu?</string>
+    <string name="verification_code">Verification code</string>
 </resources>
